@@ -1,20 +1,16 @@
 import pandas as pd
-
-# ==========================================
-# 1. โหลดข้อมูลจากไฟล์ train.csv
-# ==========================================
 df = pd.read_csv('train.csv')
 
-print("--- ข้อมูลเดิมก่อนทำ Encoding ---")
+print("--- Unencoded data ---")
 print(df[['Name', 'Sex', 'Embarked']].head(5))
 print("\n" + "="*50 + "\n")
 
 
 # ==========================================
-# 2. ตัวอย่างการทำ Label Encoding (คอลัมน์ Sex)
+# 2. Label Encoding (Sex column)
 # ==========================================
-# ใช้ฟังก์ชัน .map() ของ Pandas ในการกำหนดตัวเลขให้ข้อความโดยตรง
-# ให้ male = 0 และ female = 1
+# Using Pandas .map() into Text to numbers
+#  male = 0 , female = 1
 df['Sex_LabelEncoded'] = df['Sex'].map({'male': 0, 'female': 1})
 
 print("--- ผลลัพธ์หลังทำ Label Encoding (คอลัมน์ Sex) ---")
@@ -23,26 +19,26 @@ print("\n" + "="*50 + "\n")
 
 
 # ==========================================
-# 3. ตัวอย่างการทำ One-Hot Encoding (คอลัมน์ Embarked)
+# 3.One-Hot Encoding (Embarked cloumn)
 # ==========================================
-# ก่อนทำต้องจัดการค่าว่าง (Missing Value) ในคอลัมน์ Embarked ก่อน (มีว่างอยู่ 2 ช่อง)
-# โดยเติมด้วยค่าฐานนิยม 'S' (ท่าเรือที่คนขึ้นเยอะที่สุด)
+# using Missing Value in the Embarked cloumn because the Embarked cloumn have 2 Missing Value
+# using Median
 df['Embarked'] = df['Embarked'].fillna(df['Embarked'].mode()[0])
 
-# ใช้ฟังก์ชัน pd.get_dummies() เพื่อแตกคอลัมน์ Embarked ออกเป็นคอลัมน์เฉพาะของแต่ละท่าเรือ
-# ใส่ dtype=int เพื่อให้แสดงผลเป็นตัวเลข 1 และ 0 (ถ้าไม่ใส่จะเป็น True/False)
+# Using pd.get_dummies() to ecpand the Embarked cloumn
+# Using dtype=int to output numericle values 
 df_one_hot = pd.get_dummies(df, columns=['Embarked'], dtype=int)
 
-# แสดงเฉพาะคอลัมน์ที่เกี่ยวข้องมาดูผลลัพธ์
-print("--- ผลลัพธ์หลังทำ One-Hot Encoding (คอลัมน์ Embarked) ---")
+# display encoded data
+print("--- encoded data ---")
 encoded_columns = ['Name', 'Embarked_C', 'Embarked_Q', 'Embarked_S']
 print(df_one_hot[encoded_columns].head(5))
 
 
 # ==========================================
-# 4. บันทึกข้อมูลที่แปลงเสร็จแล้วลงไฟล์ใหม่
+# 4. save encoded data
 # ==========================================
-# รวมทั้งสองอย่างไว้ใน DataFrame เดียวกันก่อนบันทึก
+# Combine both into a single DataFrame before saving.
 df_one_hot['Sex_LabelEncoded'] = df['Sex_LabelEncoded']
 df_one_hot.to_csv('titanic_encoded_example.csv', index=False)
 print("\n🎉 บันทึกผลลัพธ์ลงไฟล์ 'titanic_encoded_example.csv' เรียบร้อยแล้ว!")
