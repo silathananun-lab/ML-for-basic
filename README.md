@@ -22,3 +22,5 @@ Data preprocessing is the process cleaning and correcting data before analysis.
 ## Feature  Engineering 
 * Label encording
 * One – Hot encording 
+# References
+Dataset URL: https://www.kaggle.com/competitions/titanic/data?select=train.csv
