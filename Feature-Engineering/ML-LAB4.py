@@ -41,4 +41,4 @@ print(df_one_hot[encoded_columns].head(5))
 # Combine both into a single DataFrame before saving.
 df_one_hot['Sex_LabelEncoded'] = df['Sex_LabelEncoded']
 df_one_hot.to_csv('titanic_encoded_example.csv', index=False)
-print("\n🎉 บันทึกผลลัพธ์ลงไฟล์ 'titanic_encoded_example.csv' เรียบร้อยแล้ว!")
+print("\n🎉 save finish")
