@@ -13,7 +13,7 @@ print("\n" + "="*50 + "\n")
 #  male = 0 , female = 1
 df['Sex_LabelEncoded'] = df['Sex'].map({'male': 0, 'female': 1})
 
-print("--- ผลลัพธ์หลังทำ Label Encoding (คอลัมน์ Sex) ---")
+print("--- Label Encoding ( Sex cloumn) ---")
 print(df[['Name', 'Sex', 'Sex_LabelEncoded']].head(5))
 print("\n" + "="*50 + "\n")
 
