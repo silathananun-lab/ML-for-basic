@@ -12,15 +12,11 @@ female-> 1 `
 ## One – Hot encording 
 Suitable for nominal categorical variables, where categories do not have a natural order or hierarchy, and each category carries equal importance. 
 
-`Embarked 	Embarked_C	Embarke_Q	Embarke_S 
-
-S			0			0			1 
-
-C			1			0			0 
-
-S			0			0			1 
-
-S			0			0			1 
-
-S			0			0			1 `
+| Embarked | Embarked_C | Embarked_Q | Embarked_S |
+| :---: | :---: | :---: | :---: |
+| S | 0 | 0 | 1 |
+| C | 1 | 0 | 0 |
+| S | 0 | 0 | 1 |
+| S | 0 | 0 | 1 |
+| S | 0 | 0 | 1 |
 
