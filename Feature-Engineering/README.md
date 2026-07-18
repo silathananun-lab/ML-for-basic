@@ -3,11 +3,11 @@ Feature Engineering is the process of creating, selecting, and transforming feat
 ## Label encording
 Label Encoding is a technique that transforms text categories into numeric labels. 
 
-`Ex sex column 
+Ex sex column 
 
 male-> 0 
 
-female-> 1 `
+female-> 1 
 
 ## One – Hot encording 
 Suitable for nominal categorical variables, where categories do not have a natural order or hierarchy, and each category carries equal importance. 
