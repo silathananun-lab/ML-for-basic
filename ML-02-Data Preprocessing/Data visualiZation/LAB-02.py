@@ -1,7 +1,8 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
-df = pd.read_csv("train.csv")
+df = pd.read_csv("ML-02-Data Preprocessing/train.csv")
+
 
 # --------Histogram----------
 df['Age'].hist(bins=20,rwidth=0.85)
@@ -16,4 +17,3 @@ plt.show()
 corr =df.corr(numeric_only="True")
 sns.heatmap(corr,annot=True,cmap="coolwarm")
 plt.show()
-

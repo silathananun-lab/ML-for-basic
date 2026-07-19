@@ -1,7 +1,7 @@
 import pandas as pd
 
 # 1. Load dataset 
-df = pd.read_csv('train.csv')
+df = pd.read_csv("ML-02-Data Preprocessing/train.csv")
 
 # ==========================================
 # STEP 2: Data Cleaning 

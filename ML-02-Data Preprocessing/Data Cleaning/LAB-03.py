@@ -1,5 +1,5 @@
 import pandas as pd
-df = pd.read_csv("train.csv")
+df = pd.read_csv("ML-02-Data Preprocessing/train.csv")
 
 #--------Missing Value Handling----------
 # add Age with the Mean
@@ -17,4 +17,3 @@ df.loc[df['Age']>80,'Age']=df['Age'].median()
 
 # --------Data Type Convertion----------
 df['Age'] = df['Age'].astype(int)
-

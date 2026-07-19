@@ -1,5 +1,5 @@
 import pandas as pd
-df = pd.read_csv("train.csv")
+df = pd.read_csv("ML-02-Data Preprocessing/train.csv")
 
 # Display shape
 print(df.shape)

@@ -1,5 +1,5 @@
 import pandas as pd
-df = pd.read_csv('train.csv')
+df = pd.read_csv("ML-02-Data Preprocessing/train.csv")
 
 print("--- Unencoded data ---")
 print(df[['Name', 'Sex', 'Embarked']].head(5))
@@ -16,7 +16,6 @@ df['Sex_LabelEncoded'] = df['Sex'].map({'male': 0, 'female': 1})
 print("--- Label Encoding ( Sex cloumn) ---")
 print(df[['Name', 'Sex', 'Sex_LabelEncoded']].head(5))
 print("\n" + "="*50 + "\n")
-
 
 # ==========================================
 # 3.One-Hot Encoding (Embarked cloumn)
@@ -41,4 +40,4 @@ print(df_one_hot[encoded_columns].head(5))
 # Combine both into a single DataFrame before saving.
 df_one_hot['Sex_LabelEncoded'] = df['Sex_LabelEncoded']
 df_one_hot.to_csv('titanic_encoded_example.csv', index=False)
-print("\n🎉 save finish")
+print("\n save finish")
