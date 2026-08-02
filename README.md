@@ -7,5 +7,11 @@
 * Feature Engineering
 * References
 
+## LAB-3 Regression & Classification
+* Simple Linear Regression 
+* Multiple Linear Regression  
+* Age prediction
+
 # References
 Dataset URL: https://www.kaggle.com/competitions/titanic/data?select=train.csv
+Dataset URL: https://www.kaggle.com/datasets/nipunarora8/age-gender-and-ethnicity-face-data-csv?resource=download
