@@ -6,8 +6,6 @@ from config import (
     TARGET
 )
 
-
-
 # Load Dataset
 def load_dataset():
 
