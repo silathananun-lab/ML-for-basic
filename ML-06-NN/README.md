@@ -373,8 +373,3 @@ outputs/predictions.csv
 Age, Gender and Ethnicity Face Data
 
 https://www.kaggle.com/datasets/nipunarora8/age-gender-and-ethnicity-face-data-csv
-
-
-### Scikit-learn
-
-https://scikit-learn.org/
