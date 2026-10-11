@@ -1,21 +1,31 @@
-# Machine-Learing-Course
+<!-- python -m venv .venv -->
+<!-- .\.venv\Scripts\activate -->
+# Age and Gender Classification using DCNN
 
-## LAB-2 Data Preprocessing
-* Dataset exploration 
-* Data VisualiZation 
-* Data Cleaning
-* Feature Engineering
-* References
+This project uses a Deep Convolutional Neural Network (DCNN) to classify age and gender from face images.
 
-## LAB-3 Regression & Classification
-* Simple Linear Regression 
-* Multiple Linear Regression  
-* Age prediction
+## Project Structure
 
-# References
-Dataset URL: https://www.kaggle.com/competitions/titanic/data?select=train.csv
+Here is a simple explanation of each file in this project:
 
-Dataset URL: https://www.kaggle.com/datasets/nipunarora8/age-gender-and-ethnicity-face-data-csv?resource=download
+- **`data_loader.py`**:
+  - Loads the dataset (`age_gender.csv`).
+  - Converts pixel numbers into image arrays for training.
 
-Dataset URL: [https://www.kaggle.com/datasets/nipunarora8/age-gender-and-ethnicity-face-data-csv?resource=download
-](https://www.kaggle.com/datasets/datamunge/sign-language-mnist/data)
+- **`preprocessing.py`**:
+  - Scales pixel values (from 0–255 to 0–1) to help the model learn better.
+
+- **`split_data.py`**:
+  - Splits the dataset into training set and testing set.
+
+- **`vgg_model.py`**:
+  - Contains the DCNN model architecture (layers, convolution, pooling, and dropout).
+
+- **`evaluate.py`**:
+  - Evaluates the model accuracy and loss.
+  - Saves performance graphs into the `outputs/` folder.
+
+- **`main.py`**:
+  - The main script to run the whole project.
+  - Runs experiments with different numbers of epochs and model configurations.
+
