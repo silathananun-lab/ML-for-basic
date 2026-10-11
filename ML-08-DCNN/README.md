@@ -29,3 +29,15 @@ Here is a simple explanation of each file in this project:
   - The main script to run the whole project.
   - Runs experiments with different numbers of epochs and model configurations.
 
+## Model Performance & Results
+
+Below are the performance graphs and evaluation results for different model configurations saved in the `outputs/` folder[cite: 1]:
+
+### 1. Config 1 (1 Blocks, 10 Epochs)
+![Config 1 Performance](outputs/Config_1_Blocks_10Epochs_performance.png)
+
+### 2. Config 2 (2 Blocks, 20 Epochs)
+![Config 2 Performance](outputs/Config_2_Blocks_20Epochs_performance.png)
+
+### 3. Config 3 (3 Blocks, 10 Epochs)
+![Config 3 Performance](outputs/Config_3_Blocks_10Epochs_performance.png)
