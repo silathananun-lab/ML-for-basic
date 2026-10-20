@@ -93,3 +93,4 @@ This experiment trained the model for 20 rounds to get better accuracy.
 * **Higher Accuracy:** Training loss decreased further compared to 10 epochs.
 * **Better Detection:** The model detects objects with higher confidence and fewer errors.
 * **Conclusion:** Training for 20 epochs gives better overall performance than 10 epochs.
+# dataset : https://universe.roboflow.com/biomechanics-bcefh/basketball-1yw4a/dataset/37
