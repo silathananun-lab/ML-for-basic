@@ -1,1 +1,0 @@
-dataset: https://universe.roboflow.com/biomechanics-bcefh/basketball-1yw4a/dataset/37
