@@ -62,7 +62,18 @@
 - Accuracy scores for each DCNN configuration. 
 - Comparison of accuracy using different numbers of epochs. 
 - Training and validation accuracy/loss results. 
-- Predictions on the selected dataset. 
+- Predictions on the selected dataset.
+
+## LAB-10 Object Detection II
+### Objective:
+- Apply YOLO to detect and classify objects in a selected dataset. 
+- Compare detection performance using different numbers of epochs and training configurations. 
+
+### Output:
+- Precision, Recall, and mAP scores for each training configuration. 
+- Comparison of detection performance using different numbers of epochs. 
+- Training and validation loss results. 
+- Object detection results with bounding boxes, class labels, and confidence scores. 
 
 # References
 - Dataset URL: [Kaggle Titanic Dataset](https://www.kaggle.com/competitions/titanic/data?select=train.csv)
